@@ -3,6 +3,10 @@ header {
     padding: 20px;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 article#formacao {
     background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQGmfMxXzx_vew/profile-displayphoto-shrink_800_800/0/1646586096237?e=1659571200&v=beta&t=GhneBTyLphvz1jPtAz6fOp7aCsYv1k6NWlY7FdBu2Eg);
     background-size: 100px;
