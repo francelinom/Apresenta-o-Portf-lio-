@@ -45,7 +45,6 @@ h1, h2 {
 }
 
 article#formacao {
-    background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQGmfMxXzx_vew/profile-displayphoto-shrink_800_800/0/1646586096237?e=1659571200&v=beta&t=GhneBTyLphvz1jPtAz6fOp7aCsYv1k6NWlY7FdBu2Eg);
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: right top;
@@ -69,25 +68,53 @@ aside {
     background-color: #315E93;
 }
 
+#fieldset1 {
+    grid-area: fieldset1;
+}
+
+#fieldset2 {
+    grid-area: fieldset2;
+}
+
+#submit {
+    grid-area: submit;
+    margin-top: 20px;
+}
+
+label[for="nome"]{
+    grid-area: labnome;
+    margin-bottom: 10px;
+}
+
+#nome {
+    grid-area: nome;
+    margin-bottom: 10px;
+}
+
+label[for="sobrenome"]{
+    grid-area: labsobrenome;
+    margin-bottom: 10px;
+}
+
+#sobrenome {
+    grid-area: sobrenome;
+    margin-bottom: 10px;
+}
+
+#fieldset1 {
+    display: grid;
+    grid-template-areas: 
+    "labnome nome" 
+    "labsobrenome sobrenome";
+    grid-template-columns: 70px 1fr;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+    padding: 20px;
+    color: black;
+}
+
 @media screen and (max-width: 1024px){
     main{
         display: block;
     }    
 }
-/*
-@keyframes anima {
-    0% { top: 0; left: 0;}
-    30% { top: 50px;}
-    60% { left: 50px;}
-    100% { top: 100px; left: 100px;}
-    
-}
-
-nav {
-    position: absolute;
-    animation-name: anima;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-*/
