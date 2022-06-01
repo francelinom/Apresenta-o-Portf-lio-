@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilo.css">
-    <title>Apresentação de Portfólio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Apresentação de Portifólio</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul id="links">
           <li><a href="#formacao">Formação</a></li>
           <li>
             <a href="#experienciaProfissional">Experiência profissional</a>
@@ -20,28 +20,80 @@
         </ul>
       </nav>
       <h1>Francelino Marcílio</h1>
+      <img src="Downloads/eu.jpg" alt="Francelino" id="pic" />
+
+      <ul id="redes">
+        <li>
+          <a href="https://github.com/francelinom" target="_blank">
+            <p>github</p>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/francelino-marcilio-da-silva/"
+            target="_blank"
+          ></a>
+          <p>linkedin</p>
+        </li>
+
+        <li>
+          <a
+            href="https://www.facebook.com/marcilio.silva.18"
+            target="_blank"
+          ></a>
+          <p>facebook</p>
+        </li>
+
+        <li>
+          <a
+            href="https://www.instagram.com/marcilio_silva77/"
+            target="_blank"
+          ></a>
+          <p>instagram</p>
+        </li>
+      </ul>
     </header>
 
     <main>
       <section>
-        <article class="sec" id="formacao">
-          <h2>Formação</h2>
-          <h3>
-            Universidade Federal do Rio Grande do Norte - <strong>UFRN</strong>
-          </h3>
-          <p><em>Formado em análise e desenvolvimento de sistemas</em></p>
-        </article>
+        <section id="inicio">
+          <h1>Desenvolvedor <span>Front-end</span></h1>
+        </section>
 
-        <article class="sec" id="experienciaProfissional">
+        <section id="formacao">
+          <div id="conteudo-formacao">
+            <h2>Formação</h2>
+            <ul id="lista-formacao">
+              <li class="formacao-item">
+                <h3>
+                  Universidade Federal do Rio Grande do Norte -
+                  <strong>UFRN</strong> - 2021
+                </h3>
+                <p><em>Formado em análise e desenvolvimento de sistemas</em></p>
+              </li>
+
+              <li class="formacao-item">
+                <h3>
+                  Universidade Potiguar -
+                  <strong>UNP</strong> - 2017
+                </h3>
+                <p><em>Formado em Ciências Contábeis</em></p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="experienciaProfissional">
           <h2>Experiência profissional</h2>
           <h3>Quark Tecnologia</h3>
           <p>Desenvolvedor Front-end - AngularJs e Angular 9</p>
 
           <h3>Spassu Tecnologia</h3>
           <p>Desenvolvedor Front-end - Angular 13</p>
-        </article>
+        </section>
 
-        <article class="sec" id="habilidade">
+        <section id="habilidade">
           <h2>Habilidades</h2>
           <ul>
             <li>
@@ -75,9 +127,9 @@
               />
             </li>
           </ul>
-        </article>
+        </section>
 
-        <article class="sec">
+        <section>
           <h2 id="projetos">Projetos</h2>
           <ul>
             <li></li>
@@ -86,9 +138,10 @@
             <li></li>
             <li></li>
           </ul>
-        </article>
+        </section>
       </section>
-      <aside>
+      <!--
+<aside>
         <h2>Vídeos em destaque</h2>
 
         <iframe
@@ -102,6 +155,7 @@
         >
         </iframe>
       </aside>
+      -->
     </main>
 
     <footer>
