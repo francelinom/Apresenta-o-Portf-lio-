@@ -1,122 +1,99 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orelega+One&display=swap');
+
+:root {
+    --background: #E5EAEF;
+    --primary: #4387D8;
+    --secondary: #315E93;
+    --tertiary: #FBFCFE;
+    --title: #102032;
+    --text: #97A3B0;
+    --white: #FFFFFF;
+    --container: 1216px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-    display: grid;
-    grid-template-areas: "um dois";
-    grid-template-columns: auto 200px;
-}
-
-a {
-    background-color: e5e5e5;
-    margin-left: 0PX;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-    color: blue;
-}
-
-a:hover, a:focus {
-    background-color: yellow;
-    color: black;
-}
-
-li {
-    display: inline;
-    margin-right: 20px;
-}
-
-section{
-    grid-area: um;
-}
-
-aside {
-    grid-area: dois;
+    background: var(--background);
+    font-family: Raleway, sans-serif;
 }
 
 header {
-    background-color: #e5e5e5;
-    padding: 20px;
-    text-align: center;
+    max-width: var(--container);
+    margin: 0 auto;
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-h1, h2 {
-    text-align: center;
+ul {
+    list-style: none;
+    display: flex;
 }
 
-article#formacao {
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: right top;
+header ul li:not(:first-child) {
+    margin-left: 24px;
 }
 
-article#experienciaProfissional {
-    background-color: #e5e5e5;
-    padding: 20px;
+nav ul a {
+    text-decoration: none;
+    display: block;
 }
 
-article#habilidade {
-    background-color: #4387D8;
-    padding: 20px;
+ul#links a{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--title);
+    text-transform: uppercase;
+    transition: 0.2s;
 }
 
-video {
-    width: 150px;
+ul#links a:hover {
+    filter: opacity(0.8);
 }
 
-aside {
-    background-color: #315E93;
+ul#redes img {
+    display: block;
 }
 
-#fieldset1 {
-    grid-area: fieldset1;
+section#inicio {
+    max-width: var(--container);
+    margin: 0 auto;
+
+    height: calc(10vh - (40px + 29px));
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
 }
 
-#fieldset2 {
-    grid-area: fieldset2;
+section#inicio h1 {
+    font-size: 88px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-#submit {
-    grid-area: submit;
-    margin-top: 20px;
+section#inicio h1 span {
+    color: var(--primary);
+    display: block;
 }
 
-label[for="nome"]{
-    grid-area: labnome;
-    margin-bottom: 10px;
-}
+section#inicio img {
+    display: block;
+    object-fit: contain;
+    width: 493px;
 
-#nome {
-    grid-area: nome;
-    margin-bottom: 10px;
-}
+    --webkit-mask-image: linear-gradient(to left, var(--background), transparent);
+    mask-image: linear-gradient(to left, var(--background), transparent);
 
-label[for="sobrenome"]{
-    grid-area: labsobrenome;
-    margin-bottom: 10px;
-}
-
-#sobrenome {
-    grid-area: sobrenome;
-    margin-bottom: 10px;
-}
-
-#fieldset1 {
-    display: grid;
-    grid-template-areas: 
-    "labnome nome" 
-    "labsobrenome sobrenome";
-    grid-template-columns: 70px 1fr;
-    background-color: rgb(241, 241, 241);
-    border: 1px solid black;
-    padding: 20px;
-    color: black;
-}
-
-@media screen and (max-width: 1024px){
-    main{
-        display: block;
-    }    
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
