@@ -20,7 +20,7 @@
 
 ## Sobre 
 
-O Projeto **Portfólio** foi desenvolvido com o que venho adquirindo de experiência e mostrar minhas habilidade, além de minhas formações Acadêmica.
+O Projeto **Portfólio** foi desenvolvido com o que venho adquirindo de experiência e mostrar minhas habilidade, além de minha formação Acadêmica.
 
 ---
 
